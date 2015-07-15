@@ -1,0 +1,58 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(20, 196, 196);
+  position: relative;
+}
+input {
+  background: rgb(18, 184, 184);
+  border: 12px solid rgb(255, 255, 255);
+  border-radius: 75px;
+  height: 70px;
+  width: 70px;
+  padding: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 65px;
+  font-family: sans-serif;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+  z-index: 1;
+}
+input:focus{
+  outline: none;
+}
+#canv {
+  position: absolute;
+  margin-top: -35px;
+  margin-left: 130px;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+#canv1 {
+  position: absolute;
+  margin-top: -104px;
+  margin-left: 495px;
+  opacity: 0;
+  transition: all 0.4s ease-out;
+  -webkit-transition: all 0.4s ease-out;
+}
+div:hover input {
+  width: 400px;
+  padding-right: 120px;
+}
+div:hover #canv {
+  -webkit-transform: rotate(-45deg);
+  z-index: 0;
+  margin-top: -98px;
+  margin-left: 465px;
+}
+div:hover #canv1 {
+  opacity: 1;
+}
